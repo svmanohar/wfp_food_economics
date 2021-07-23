@@ -1,0 +1,61 @@
+# Country ID
+# Original name: adm0_id
+country_id
+-
+adm0_id int pk FK >- fData.adm0_id
+adm0_name varchar
+
+# Locality ID
+# Original name: adm1_id
+locality_id
+-
+adm1_id int pk FK >- fData.adm1_id
+adm1_name varchar
+
+# Market ID
+# Original name: mkt_id
+market_id
+-
+mkt_id int pk FK >- fData.mkt_id
+mkt_name varchar
+
+# Commodity ID
+# Original name: cm_id
+commodity_id
+-
+cm_id int pk FK >- fData.cm_id
+cm_name varchar
+
+# Currency ID
+# Original name: cur_id
+currency_id
+-
+cur_id int pk FK >- fData.cur_id
+cur_name varchar
+
+# Market Type ID
+# Original name: pt_id
+mkt_type_id
+-
+pt_id int pk FK >- fData.pt_id
+pt_name varchar
+
+# Unit of Measure ID
+# Original name: um_id
+um_id
+-
+um_id int pk FK >- fData.um_id
+um_name varchar
+
+# Fact Table
+fData
+-
+adm0_id int fk
+adm1_id int fk
+mkt_id int fk
+cm_id int fk
+cur_id int fk
+pt_id int fk
+um_id int fk
+mp_month date
+mp_price float
